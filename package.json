@@ -1,0 +1,22 @@
+{
+  "name": "ejemplo",
+  "version": "1.0.0",
+  "description": "Ejemplo para citytaxi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edisoncast/nodemongo.git"
+  },
+  "dependencies": {
+    "mongodb": "~2.0"
+  },
+  "author": "Jhon Edison Castro basado en Christian Kvalheim",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/edisoncast/nodemongo/issues"
+  },
+  "homepage": "https://github.com/edisoncast/nodemongo"
+}
