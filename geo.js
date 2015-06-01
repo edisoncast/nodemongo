@@ -55,10 +55,14 @@ var findDocuments = function(db, callback) {
   // Get the documents collection
   var collection = db.collection(collections);
   //Limites cuadrados
-  var box = [[-70, 3], [-76, 6]]; 
+  //var box = [[-70, 3], [-76, 6]];
+  //Limites triangulares
+  var triangle = [[-80, 6], [-90, 6], [-90, 6]]; 
+  
   // Find some documents
-  //collection.find({loc: {$near: [-75.49767,5.074065], $maxDistance: 10}}).toArray(function(err, docs) {
-      collection.find({loc: {$within: {$box: box}}}).toArray(function(err, docs) {
+  collection.find({loc: {$near: [-75.49767,5.074065], $maxDistance: 10}}).toArray(function(err, docs) {
+     // collection.find({loc: {$within: {$box: box}}}).toArray(function(err, docs) {
+      // collection.find({loc: {$within: {$polygon: triangle}}}).toArray(function(err, docs) {
       assert.equal(err, null);
  //   assert.equal(12, docs.length);
     console.log("Found the following records");
